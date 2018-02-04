@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+
+body{
+  font-family: 'Fjalla One', sans-serif;
+}
+.box{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  padding:10px;
+  justify-content:space-around;
+  align-items:center;
+  max-width:30vw;
+  min-width:100px;
+  color:white;
+}
+.nav ul{
+  display:flex;
+  justify-content:space-around;
+  list-style:none;
+}
+.nav ul li:hover{
+  cursor:pointer;
+  border: 3px solid rgba(13, 79, 32,1);
+  background-color:white;
+  color:rgba(13, 79, 32,1);
+}
+.nav ul li{
+  transition: all .2s;
+  border: 3px solid white;
+  background-color:rgba(13, 79, 32,1);
+  padding:9px;
+  color:white;
+}
+
+.flexy{
+  display:flex;
+  margin:0;
+  
+}
+.JumboAwesome:hover h1{
+ 
+    margin-bottom:-.6em;
+  padding-top:.4em;
+  padding-bottom:.6em;
+    -ms-transform: scale(1.05, 1.05); /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05); /* Safari */
+    transform: scale(1.03, 1.03);
+}
+.JumboAwesome:hover{
+  color:rgba(13, 79, 32,1);
+  
+}
+.JumboAwesome h1{
+  margin:0;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  background-color:rgba(255, 255, 255, .6);
+  transition: all 0.5s ease-in-out;
+}
+.JumboAwesome{
+  margin:0;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  font-family: 'Fjalla One', sans-serif;
+  width:100%;
+  min-height:300px;
+  text-align:center;
+  background-image:url('https://source.unsplash.com/wpU4veNGnHg/900x300');
+  font-size: 5vw;
+  color:rgba(13, 79, 32,0.85);
+}
+.stax{
+  display:flex;
+  margin:0;
+  background-color:rgba(13, 79, 32,0.85);
+  min-height: 400px;
+    
+}
+.darker h3{
+  
+  width:30vw;
+  height:auto;
+}
+.darker{
+  align-items:center;
+  background-color: #021608;
+  color:white;
+  min-height 250px;
+  display:flex;
+  padding:30px;
+ justify-content: space-around; 
+}
+.abso{
+  font-size: 6em;
+  margin-top:-6em;
+  color:white;
+  text-align:center;
+  
+}
+.signUp{
+  padding:.3em;
+  border: 3px solid white;
+}
+.signUp:hover{
+  cursor:pointer;
+  background-color: rgba(255,255,255,.8);
+  color:black;
+}
+
+@media only screen and (max-width: 500px) {
+  .stax{
+    flex-direction:column;
+    flex-wrap:wrap;
+  }
+  .box{
+    padding-top:20px;
+    max-width:90vw;
+  }
+  .darker{
+    flex-direction:column;
+  }
+  .darker h3{
+    width:80vw;
+    text-align:center;
+  }
+}
